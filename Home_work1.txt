@@ -1,0 +1,179 @@
+Открыть Chrome DevTools - правая кнопка мыши
+inspect code
+
+Зайти в панель Elements.
+
+Найти инспектором кнопку Submit и выровнять слово Submit по центру 
+изменить значение padding 
+
+Включить режим мобильного девайса (Device Mode) 
+toggle device tool bar
+
+Выставить Dimensions: 
+Responsive  
+
+Выбрать Responsive 
+Mobile
+
+Продемонстрировать работу дизайна Responsive
+с каждым пикселем дизайн меняется, сдвигается
+
+Выставить Dimensions: Adaptive (select device)
+дизайн адаптируется в определенном диапазоне  
+
+Создать свой девайс.
+ввести свои параметры
+
+Выставить Throttling low-end mobile
+показатели стабильности и скорости соединения с интернетом 
+
+Обновить страницу
+
+Перевести в ландшафтные режим.
+ 
+Выключить Device Mode
+ 
+Открыть панель Console.
+
+Найти 2 сообщения Error в логах
+
+Сохранить эти 2 сообщения лога как файл на компьютер. 
+save us , правая кнопка мыши
+
+Найти 1 сообщение verbose
+
+Пролистать логи Warnings, Info, User Messages.
+
+Открыть вкладку Sources.
+
+Открыть файл Index
+
+Открыть вкладку Network
+
+В урле отправить отправить http://162.55.220.72:5005/object_info_3?age=32&salary=1000&name=name
+
+Найти лог request http://162.55.220.72:5005/object_info_3?age=32&salary=1000&name=name
+responce {
+  "age": "32", 
+  "family": {
+    "children": [
+      [
+        "Alex", 
+        24
+      ], 
+      [
+        "Kate", 
+        12
+      ]
+    ], 
+    "pets": {
+      "cat": {
+        "age": 3, 
+        "name": "Sunny"
+      }, 
+      "dog": {
+        "age": 4, 
+        "name": "Luky"
+      }
+    }, 
+    "u_salary_1_5_year": 4000
+  }, 
+  "name": "name", 
+  "salary": 1000
+}
+
+Открыть вкладку Headers
+
+Просмотреть General,  Request URL: http://162.55.220.72:5005/object_info_3?age=32&salary=1000&name=name
+Request Method: GET
+Status Code: 200 OK
+Remote Address: 162.55.220.72:5005
+Referrer Policy: strict-origin-when-cross-origin
+
+Response HeadersContent-Length: 377
+Content-Type: application/json
+Date: Fri, 07 Oct 2022 14:46:08 GMT
+Server: Werkzeug/2.0.1 Python/3.8.10
+
+
+Request Headers  Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+Connection: keep-alive
+Host: 162.55.220.72:5005
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36
+
+ 
+ Найти и скопировать в новый текстовый файл header - User-Agent. - network - request headers
+ 
+ Открыть вкладку Preview
+
+Развернуть все уровни вложенности JSON.
+{age: "32", family: {children: [["Alex", 24], ["Kate", 12]],…}, name: "name", salary: 1000}
+age: "32"
+family: {children: [["Alex", 24], ["Kate", 12]],…}
+children: [["Alex", 24], ["Kate", 12]]
+0: ["Alex", 24]
+1: ["Kate", 12]
+pets: {cat: {age: 3, name: "Sunny"}, dog: {age: 4, name: "Luky"}}
+cat: {age: 3, name: "Sunny"}
+dog: {age: 4, name: "Luky"}
+u_salary_1_5_year: 4000
+name: "name"
+salary: 1000
+
+
+Открыть вкладку Application.
+
+Развернуть все Storage в левом столбце.
+
+Зайти в Cache Storage и Application Cache. Там везде будет пусто.
+
+Открыть любой сайт который хотите
+Введите урл сайта в адресную строку и нажмите Enter
+
+Откройте вкладку LightHouse
+
+Нажмите Generate report
+урощенная версия перформанса, можно проследить за производительностью и доступностью веб сайтов
+
+Установить в браузер бесплатный AdBlocker
+
+Установить в браузер Json Viewer
+
+Зайти на сайт https://ksendzov.com (https://ksendzov.com/)
+
+Сделать и сохранить скриншот видимой части страницы сайта
+toggle device tool bar  далее три точки в верхней панели и  capture screenshots
+
+Сделать и сохранить скриншот всего сайта.  
+toggle device tool bar  далее три точки в верхней панели и  capture full size  screenshots
+
+Изменить локацию GPS. Продемонстрировать на сайте Гугл карт. 
+Ввести «sensors», выбрать «Show Sensors» В списке «Geolocation» выбрать один из доступных городов или «Custom location», 
+или выбрать «Location unavailable», чтобы посмотреть, как ведёт себя сайт, если данных о местоположении пользователя нет.
+
+Найти интерфейс для изменения User-Agent.
+More tools -> Network conditions.
+
+Подставить другой User-Agent. 
+
+Отправить запрос на http://162.55.220.72:5005/object_info_3?age=32&salary=1000&name=name
+
+Проверить изменился ли ваш нативный User-Agent на новый, подставленный
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: ru,ru-RU;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6
+Cache-Control: max-age=0
+Connection: keep-alive
+Host: 162.55.220.72:5005
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Android 4.4; Mobile; rv:70.0) Gecko/70.0 Firefox/70.0
+ 
+Найти интерфейс для изменения/добавления параметров 
+Throttling. - эмуляция устройств-Throttling-  показатели стабильности и скорости соединения с интернетом 
+
+создать свои параметры плохого соединения и проверить как будет загружаться страница
+add custom
+
